@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Duckie Shop";
+}
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/main_styles.css">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade main_slider">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/Content/assets/images/slider/fotor-ai-2023110901431.jpg"/> 
+            </div>
+            <div class="carousel-item">
+                <img src="~/Content/assets/images/slider/fotor-ai-2023110901834.jpg"/> 
+            </div>
+            <div class="carousel-item">
+                <img src="~/Content/assets/images/slider/fotor-ai-202311090335.jpg" /> 
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+<style>
+    img {
+        width: 1905px;
+        max-height:742px;
+    }
+</style>
+
+<div class="new_arrivals">
+    <div class="container">
+        @Html.Action("MenuArrivals", "Menu")
+    </div>
+</div>
+@Html.Action("Partial_ProductSales", "Products")
