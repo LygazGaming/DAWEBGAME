@@ -11,7 +11,7 @@ using DAGAME.Models;
 
 namespace DAGAME.Areas.Admin.Controllers
 {
-    //[Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin")]
     public class AccountController : Controller
     {
         private ApplicationSignInManager _signInManager;

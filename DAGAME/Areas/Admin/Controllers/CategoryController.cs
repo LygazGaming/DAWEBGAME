@@ -8,7 +8,7 @@ using DAGAME.Models.EF;
 
 namespace DAGAME.Areas.Admin.Controllers
 {
-    //[Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin")]
     public class CategoryController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();

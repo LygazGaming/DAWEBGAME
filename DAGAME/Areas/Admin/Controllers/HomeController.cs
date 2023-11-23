@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace DAGAME.Areas.Admin.Controllers
 {
-    //[Authorize(Roles = "Admin,Employee")]
+    [Authorize(Roles = "Admin,Employee")]
     public class HomeController : Controller
     {
         // GET: Admin/Home

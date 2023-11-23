@@ -11,7 +11,7 @@ using DAGAME.Models.ViewModels;
 
 namespace DAGAME.Areas.Admin.Controllers
 {
-    //[Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin")]
     public class OrderController : Controller
     {
 

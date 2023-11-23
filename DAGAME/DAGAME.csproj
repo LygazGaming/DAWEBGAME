@@ -51,7 +51,7 @@
       <HintPath>..\..\..\CKFinder.dll</HintPath>
     </Reference>
     <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Dapper.2.1.15\lib\net461\Dapper.dll</HintPath>
+      <HintPath>..\packages\Dapper.2.1.21\lib\net461\Dapper.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
@@ -214,6 +214,10 @@
     <Compile Include="Migrations\202311230333485_Done Database.cs" />
     <Compile Include="Migrations\202311230333485_Done Database.designer.cs">
       <DependentUpon>202311230333485_Done Database.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311230636244_Done Code.cs" />
+    <Compile Include="Migrations\202311230636244_Done Code.designer.cs">
+      <DependentUpon>202311230636244_Done Code.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -8361,6 +8365,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202311230333485_Done Database.resx">
       <DependentUpon>202311230333485_Done Database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311230636244_Done Code.resx">
+      <DependentUpon>202311230636244_Done Code.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

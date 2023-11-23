@@ -19,11 +19,10 @@
         <div class="card-body">
             <div class="row">
                 <div class="col-6">
-                    @using (Html.BeginForm("index", "News", FormMethod.Get, new { }))
+                    @using (Html.BeginForm("index", "Product", FormMethod.Get, new { }))
                     {
                         <div class="input-group input-group-sm">
                             @Html.TextBox("Searchtext", null, new { @class = "form-control" })
-                            @*<input type="text" name="searchtext" class="form-control">*@
                             <span class="input-group-append">
                                 <button type="submit" class="btn btn-info btn-flat">Tìm kiếm</button>
                             </span>
@@ -154,7 +153,7 @@
                     var conf = confirm('Bạn có muốn xóa các bản ghi này hay không?');
                     if (conf === true) {
                         $.ajax({
-                            url: '/admin/news/deleteAll',
+                            url: '/admin/product/deleteAll',
                             type: 'POST',
                             data: { ids: str },
                             success: function (rs) {
